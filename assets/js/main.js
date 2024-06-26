@@ -27,7 +27,7 @@ function convertPokemonToLi(pokemon) {
 
 function getPokemon(id) {
     console.log(`cliquei no pokemon número ${id}!`);
-    window.open(`../index.html?id=${id}`, "_blank");
+    window.open(`../index.html?id=${id}`, "_self");
   }
 
 function loadPokemonItens(offset, limit) {

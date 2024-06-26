@@ -17,6 +17,9 @@ function convertPokemonToCard(pokemon) {
           .join("")}
         </ol>
       </div>
+      <div class="pagination">
+      <a href='/index.html'><button>Voltar para Pokédex</button></a>
+      </div>      
     </div>
     <div class="card_second_div">
       <h3>Informações</h3>
