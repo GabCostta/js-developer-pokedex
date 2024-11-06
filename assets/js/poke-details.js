@@ -2,7 +2,7 @@ const pokeInfo = document.getElementById("card");
 
 function convertPokemonToCard(pokemon) {
   return `
-  <article>
+  <article onclick="showPokemonDescription(${pokemon.number})">
     <div class="card_first_div ${pokemon.type}">
       <header>
         <p>#${pokemon.number}</p>
@@ -47,8 +47,8 @@ function loadPokemon(id) {
   pokeApi.convertPokemonToDetail(id).then((pokemon) => {
     const newPokemon = convertPokemonToCard(pokemon);
     pokeInfo.innerHTML += newPokemon;
-    
   });
 }
+
 
 loadPokemon(pokemonId());
